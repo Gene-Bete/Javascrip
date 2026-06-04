@@ -13,7 +13,21 @@
 <body>
     <h1>Aprendedo JavaScript</h1>
     <p id="texto"></p>
-    <button onclick="eventoClink()">Clique aqui</button>
+    <button ondblclick="eventoDblClink()">Clique aqui</button><br><br>
+
+    <select onchange="mudou()" name="" id="itens">
+        <option value="1"> Valor1</option>
+        <option value="2"> Valor2</option>
+        <option value="3"> Valor3</option>
+        <option value="4"> Valor4</option>
+    </select>
+
+    <div id="teste" onmouseout="viraAzul()" onmouseover="viraVermelho()" 
+    style="margin: auto auto; width:80%; height: 200px; background:blue;">
+ </div>
+ <br>
+ <input onblur="eventoClink()" id="campoTexto"  style="padding: 80px; font-size: 40px;"
+  type="text" placeholder="Digite alguma coisa" value="Ja vem com texto">
     <script src="js/index.js"></script>
 </body>
 </html>
