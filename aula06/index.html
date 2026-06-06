@@ -10,7 +10,7 @@
       }  
     </style>
 </head>
-<body>
+<body onresize="console.log('Houve um redimencionamento')">
     <h1>Aprendedo JavaScript</h1>
     <p id="texto"></p>
     <button ondblclick="eventoDblClink()">Clique aqui</button><br><br>
@@ -26,8 +26,8 @@
     style="margin: auto auto; width:80%; height: 200px; background:blue;">
  </div>
  <br>
- <input onblur="eventoClink()" id="campoTexto"  style="padding: 80px; font-size: 40px;"
-  type="text" placeholder="Digite alguma coisa" value="Ja vem com texto">
+ <input onkeyup="teclaPressionada()" onblur="eventoClink()" id="campoTexto"  style="padding: 80px; font-size: 40px;"
+  type="text" placeholder="Digite alguma coisa">
     <script src="js/index.js"></script>
 </body>
 </html>

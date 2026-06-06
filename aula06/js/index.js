@@ -1,5 +1,5 @@
 function eventoClink(){
-    alert('acionou um evento de clink');
+    //alert('acionou um evento de clink');
     document.body.style.backgroundColor = "yellow";
 }
 function eventoDblClink(){
@@ -19,4 +19,8 @@ function adicionaTexto(){
 }
 function mudou(){
    console.log('Mudou')
+}
+function teclaPressionada(){
+   
+    console.log('Tecla Pressionada');
 }
